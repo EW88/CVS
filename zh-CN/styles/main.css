@@ -1,0 +1,348 @@
+/* CSS Document */
+
+/* Generic */
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	z-index: 0;
+}
+
+body {
+	background: url(../../images/bg.jpg) center fixed no-repeat;
+	background-size: cover;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 40px;
+	color: #0d254c;
+	text-align: center;
+	padding-top: 20px;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+h3 {
+	padding-left: 10px;
+	border-left: solid #0d254c 5px;
+	display: inline;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.top-shadow {
+	background: url(../../images/top-shadow.png) no-repeat center;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	z-index: 9990;
+}
+
+.bottom-shadow {
+	background: url(../../images/bottom-shadow.png) no-repeat center;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	z-index: 9990;
+}
+
+.vertical-separator {
+	background: url(../../images/vertical_separator.png) no-repeat center;
+	position: relative;
+	width: 20px;
+	z-index: 9990;
+}
+
+/* Header */
+
+#header {
+	width: 100%;
+	height: 150px;
+	background: url(../../images/header.png) repeat-x;
+	position: relative;
+	top: 0;
+}
+
+#logo {
+	width: 100px;
+	height: 150px;
+	float: left;
+}
+
+#logo img {
+	position: relative;
+	top: 25px;
+	width: 100px;
+}
+
+#header-right {
+	margin-left: 100px;
+}
+
+#com-name {
+	height: 100px;
+	padding-left: 15%;
+}
+
+#com-name h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	color: #0d254c;
+	line-height: 100px;
+}
+
+#language {
+	position: absolute;
+	top: 13px;
+	height: 60px;
+	right: 80px;
+	line-height: 40px;
+	color: #CCC;
+}
+
+#language a{
+	font-size:10px;
+	color: #0d254c;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	-moz-transition: all 0.5s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.5s ease-in;
+    /* Opera */
+    -o-transition: all 0.5s ease-in;
+    /* Standard */
+    transition: all 0.5s ease-in;
+}
+
+#language a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#nav {
+	height: 50px;
+	padding: 0 10px;
+}
+
+#nav ul {
+	list-style: none;
+	float: right;
+}
+
+#nav ul li {
+	float: left;
+	height: 100%;
+}
+
+#nav ul li a:link, #nav ul li a:visited {
+	display: block;
+	text-decoration: none;
+	line-height: 50px;
+	padding: 0 20px;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 18px;
+	color: #173E7F;
+	/* Mozilla */
+	-moz-transition: all 0.3s;
+    /* WebKit */
+    -webkit-transition: all 0.3s;
+    /* Opera */
+    -o-transition: all 0.3s;
+    /* Standard */
+    transition: all 0.3s;
+}
+
+#nav ul li a:hover, #nav ul li a:focus, li.current a:link, li.current a:visited {
+	color: #0d254c;
+	box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4) inset, 0 0 10px rgba(197, 216, 255, 0.6);  
+	-moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4) inset, 0 0 10px rgba(197, 216, 255, 0.6);  
+	-webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4) inset, 0 0 10px rgba(197, 216, 255, 0.6);
+}
+
+#nav ul li a:active {
+	color: #0d254c;
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.6) inset;  
+	-moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.6) inset;  
+	-webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.6) inset;
+}
+
+/* Content */
+
+#content {
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+#slide-show {
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+#slide-show span {
+	text-indent: -9999px;
+	width: 50px;
+	height: 50px;
+	font-size: 36px;
+	margin: 8px;
+	cursor: pointer;
+	position: relative;
+	bottom: 200px;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#slide-show #slider-prev {
+	float: left;
+	margin-left: 12%;
+	background: url(../../images/icons.png) top left no-repeat;
+	background-size: 400px 100px;
+	background-position: -300px -50px;
+}
+
+#slide-show #slider-prev:hover {
+}
+
+#slide-show #slider-next {
+	float: right;
+	margin-right: 12%;
+	background: url(../../images/icons.png) top left no-repeat;
+	background-size: 400px 100px;
+	background-position: -350px 0;
+}
+
+#slide-show #slider-next:hover {
+}
+
+#slider {
+	width: 800px;
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#slider .slides {
+	display: block;
+	list-style: none;
+	height: 350px;
+}
+
+#slider .slide {
+	float: left;
+	width: 800px;
+	height: 350px;
+}
+
+#mission {
+	margin-bottom: 50px;
+}
+
+#mission p {
+	margin-top: 20px;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+#highlight {
+	margin-bottom: 50px;
+	padding-bottom: 200px;
+}
+
+#highlight .section {
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+
+#highlight .section p {
+	margin-top: 20px;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+#highlight .first {
+	margin-left: 0;
+}
+
+#program img {
+	width: 100%;
+}
+
+#hotel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#hotel p {
+	margin-top: 30px;
+	font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 20px;
+}
+
+#price {
+	margin: 0 auto;
+}
+
+#price ul {
+}
+
+#price ul li {
+}
+
+#price ul li p {
+	text-align: center;
+}
+
+#contact {
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+#contact .section {
+	width: 50%;
+	float: left;
+}
+
+#contact .section ul {
+	list-style: none;
+}
+
+#contact .section ul li {
+	margin: 40px 20px;
+}
+
+#contact .section ul li span {
+	float: left;
+}
+
+#contact .section ul li p {
+	padding-left: 80px;
+	padding-bottom: 10px;
+}
+
+/* Footer */
+
+#footer {
+	background: rgba(9,26,53,0.85);
+}
+
+#copyright {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#copyright p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
